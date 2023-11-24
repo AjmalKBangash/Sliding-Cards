@@ -23,34 +23,34 @@ const SlidingCard = () => {
   console.log(Departments.length);
   return (
     // <Container>
-    <Grid container style={{ border: "1px solid purple" }}>
+    <Grid container>
       <Grid className="top-sliding-container" xs={12} sm={10} md={10} lg={10}>
-        {/* <div className="sliding-card-container"> */}
-        <Grid className="sliding-card-container" xs={10} sm={10} lg={10}>
+        <div className="sliding-card-container">
+          {/* <Grid className="sliding-card-container" xs={2} sm={3} lg={10}> */}
           <div
             className="sliding-card"
-            style={{ transform: `translateX(${position * 236}px)` }}
+            style={{ transform: `translateX(${position * 256}px)` }}
           >
             {Departments.map((department, id) => {
               console.log(position);
               return (
-                <Grid
-                  className="card"
-                  item
-                  lg={6}
-                  md={6}
-                  xs={6}
-                  spacing={2}
-                  style={{ border: "1px solid purple" }}
-                >
-                  {/* <div className="card"> */}
+                // <Grid
+                //   className="card"
+                //   item
+                //   spacing={2}
+                //   lg={4}
+                //   md={6}
+                //   xs={10}
+                //   style={{ border: "1px solid purple" }}
+                // >
+                <div className="card">
                   <div className="card-portion-01">
                     {/* <div className="card-portion-01-dp"> */}
-                    <img className="card-portion-01-dp" src={femaleprofile} />
+                    <img className="card-portion-01-dp" src={department.pic} />
                     {/* </div> */}
                   </div>
                   <div className="card-portion-02">
-                    <div>LAILA GULALAI</div>
+                    <div>David Dell</div>
                     <p>
                       I am fully satidfied with his work and i am also
                       recommending his work to all of you her is my profile
@@ -59,18 +59,18 @@ const SlidingCard = () => {
                   </div>
                   <div className="card-portion-angle"></div>
                   {department.name}
-                  {/*  </div> */}
-                </Grid>
+                </div>
+                // {/* </Grid> */}
               );
             })}
           </div>
-        </Grid>
-        {/* </div> */}
+          {/* </Grid> */}
+        </div>
         <div className="controls">
           <button
             className="btn01"
             onClick={moveLeft}
-            disabled={position === -10}
+            disabled={position === -18}
           >
             <AiOutlineCaretLeft
               style={{ fontSize: "30px", color: "#045e5e" }}

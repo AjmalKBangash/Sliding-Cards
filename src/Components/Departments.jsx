@@ -1,8 +1,14 @@
+import femaleprofile from "/home/ajay/Desktop/django-react/sliding-cards-app/src/Media/hijab.jpg";
+import maleprofile from "/home/ajay/Desktop/django-react/sliding-cards-app/src/Media/male-profile.webp";
+import malep02 from "/home/ajay/Desktop/django-react/sliding-cards-app/src/Media/maleprofile02.webp";
+import ajay from "/home/ajay/Desktop/django-react/sliding-cards-app/src/Media/M36AjmalKhan01.jpg";
+
 const Departments = [
   {
     id: "1",
     name: "CARDIOLOGY",
-    pic: "require('./src/Components/CarouselImages/PillsImages/pill01.png')",
+    // pic: "require('/home/ajay/Desktop/django-react/sliding-cards-app/src/Media/hijab.jpg')",
+    pic: femaleprofile,
     description:
       "Used in men who do not make enough of a natural substance called testosterone ",
     price: 700,
@@ -12,7 +18,8 @@ const Departments = [
   {
     id: "2",
     name: "ENDOCRINOLOGY",
-    pic: "require('./src/Components/CarouselImages/PillsImages/pill02.jpeg')",
+    // pic: "require('/home/ajay/Desktop/django-react/sliding-cards-app/src/Media/male-profile.webp')",
+    pic: maleprofile,
     description:
       "Relief of symptoms associated with seasonal allergic rhinitis due to allergen",
     price: 700,
@@ -22,7 +29,8 @@ const Departments = [
   {
     id: "3",
     name: "ENT",
-    pic: "require('./src/Components/CarouselImages/PillsImages/pill03.webp')",
+    // pic: "require('./src/Components/CarouselImages/PillsImages/pill03.webp')",
+    pic: malep02,
     description:
       "Relief of symptoms associated with seasonal allergic rhinitis due to allergen",
     price: 400,
@@ -32,7 +40,8 @@ const Departments = [
   {
     id: "4",
     name: "EYE",
-    pic: "require('./src/Components/CarouselImages/PillsImages/pill04.jpg')",
+    // pic: "require('./src/Components/CarouselImages/PillsImages/pill04.jpg')",
+    pic: ajay,
     description:
       "Relief of symptoms associated with seasonal allergic rhinitis due to allergen",
     price: 150,

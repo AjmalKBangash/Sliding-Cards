@@ -1,3 +1,6 @@
+body {
+  background-color: rgb(224, 224, 224);
+}
 * {
   /* border: 2px solid green; */
 }
@@ -5,15 +8,16 @@
   position: relative;
   /* width: 80%; */
   margin: auto;
-  margin-top: 18%;
-  border: 2px solid red;
+  margin-top: 12%;
+  /* border: 2px solid red; */
+  padding: 1%;
 }
 .sliding-card-container {
   overflow: hidden;
   position: relative;
-  /* width: 708px; */
+  width: 768px;
   margin: auto;
-  border: 2px solid green;
+  /* border: 2px solid green; */
   box-sizing: border-box;
   position: relative;
   z-index: 0;
@@ -23,22 +27,23 @@
   display: flex;
   transition: transform 0.8s ease;
   z-index: 0;
-  border: 2px solid brown;
+  /* border: 2px solid brown; */
 }
 
 .card {
-  flex: 0 0 220px;
+  flex: 0 0 240px;
   /* HERE 200PX IS THE FLEX BASIS PROPERTY (WIDTH) OF THE ELEMENT */
-  height: 280px;
+  height: 320px;
   padding: 0px;
-  border: 2px solid rgb(53, 53, 0);
   margin: 0px 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   text-overflow: ellipsis;
   box-sizing: border-box;
-  border-radius: 20px;
+  border-radius: 18px;
   position: relative;
+  background-color: white;
+  z-index: -2;
 }
 .card div {
 }
@@ -52,55 +57,53 @@
   z-index: -1;
 }
 .card-portion-01 {
-  border-bottom-left-radius: 20px;
+  border-bottom-left-radius: 18px;
   height: 45%;
   background-color: #045e5e;
   /* background-color: #4367d3; */
   z-index: 2;
 }
 .card-portion-01-dp {
-  height: 80px;
-  width: 80px;
+  height: 104px;
+  width: 104px;
   border-radius: 50%;
-  margin: 10px auto;
-  border: 2px solid white;
+  margin: 12px auto;
+  border: 3px solid white;
   /* border: 2px solid #034b4b; */
 }
 .card-portion-02 {
   background-color: white;
-  border-top-right-radius: 20px;
+  border-top-right-radius: 18px;
   height: 55%;
   z-index: 2;
 }
 .card-portion-02 div {
-  /* font-family: Blippo, fantasy; */
-  /* font-weight: 900; */
-  /* font-family: "Roboto" sans-serif; */
-  font-family: "vina Sans";
+  font-family: "Roboto";
+  font-weight: 700;
   color: rgb(43, 43, 43);
-  font-weight: 100;
-  height: 12%;
+  height: 15%;
+  padding-top: 3%;
 }
 .card-portion-02 p {
-  padding: 5px 10px;
+  padding: 2px 8px;
   font-size: 14px;
-  height: 48%;
-  text-overflow: ellipsis;
-  border: 1px solid red;
+  height: 45%;
   margin: 0%;
   font-family: "Roboto";
-  /* font-family: "Vina Sans"; */
-  font-weight: 300;
-  color: rgb(43, 43, 43);
+  font-weight: 500;
+  color: rgb(95, 95, 95);
+  text-overflow: ellipsis;
 }
 .card-portion-02 button {
   background-color: #045e5e;
   color: white;
+  font-weight: 700;
   border: none;
   outline: none;
-  font-weight: 100;
-  font-family: "Vina Sans";
-  height: 22%;
+  height: 18%;
+  width: 80px;
+  margin-top: 10px;
+  border-radius: 4px;
 }
 .controls {
   z-index: 1;
@@ -123,5 +126,5 @@
   cursor: pointer;
   background: transparent;
   border: none;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
